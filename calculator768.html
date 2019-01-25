@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<body bgcolor="blue" border= 50>
+
+<div ng-app="" ng-init="quantitiy-1=; quantity-2=; quantity-3=; price=" align=center>
+<div border=55><h1 style="color:red"> REQUIRED PRICE LIST OF THE FURNITURE </h1>
+
+<img src="css/rishav.jpg" alt="furniture shop pic" style="height:200px; width:800px; border=10"></div>
+<marquee style="color:orange"> KUMAR &nbsp; KAST &nbsp; KALA &nbsp; UDHOG , NALA ROAD , HISUA, NAWADA </marquee>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<font style="color:white">*Quantity-length</font> :<input style="background-color:yellow" type="text" ng-model="quantity1"><br>
+<br>
+<br>
+<font style="color:white">*Quantity-breath :<input style="background-color:lightpink" type="text" ng-model="quantity2"><br>
+<br>
+<br>
+<br>
+<font style="color:white">*Quantity-width :<input style="background-color:lightgreen"type="text" ng-model="quantity3"><br>
+<br>
+<br>
+<br>
+<font style="color:whitle">*Price    :<input style="background-color:orange" type="number" ng-model="price">
+<br>
+<br>
+<br>
+<p> <b> *Total in price:</b> : {{(quantity1*quantity2*quantity3*price)/1728}} </p>
+</div>
+<br>
+<hr>
+<form ng-app="" name="myForm">
+    Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+</form>
+
+<hr style="color:orange">
+<time style="color:orange" > Open-Close:8:30 am - 7:0 pm </time>
+
+<footer style="color:orange"> KUMAR KAST KALA UDHOG  call : <a  style="color:red"href="+(91)77-17-73-7427">+(91)-7717737427</a></footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<body>
+<div ng-app="" ng-init="names=['anup kumar','amit kumar', 'deepak kumar']">
+<p> this shop belongs to these three owner's:</p>
+<ul>
+<li ng-repeat = "x in names">
+{{x}}
+</li>
+</ul>
+</body>
+</html>
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+
+<body>
+<div ng-app="" ng-init="">
+
+<form ng-app="" name="myForm">
+    Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
